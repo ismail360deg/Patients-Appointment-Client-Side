@@ -1,12 +1,18 @@
 import React from 'react';
+import { BallTriangle } from 'react-loader-spinner'
 
 const Loading = () => {
     return (
-        <div className="flex justify-center items-center">
-            <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-                <span className="visually-hidden">L</span>
-            </div>
-        </div>
+        <div className="h-screen flex justify-center items-center backdrop-blur-[9xl]">
+        <BallTriangle
+            height={100}
+            width={100}
+            radius={5}
+            color="#0FCEE8"
+            ariaLabel="ball-triangle-loading"
+            visible={true}
+        />
+    </div>
     );
 };
 

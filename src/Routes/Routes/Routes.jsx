@@ -13,6 +13,8 @@ import AddDoctor from "../../Pages/DashBoard/AddDoctor/AddDoctor";
 import ManageDoctors from "../../Pages/DashBoard/ManageDoctors/ManageDoctors";
 import Payment from "../../Pages/DashBoard/Payment/Payment";
 import DisplayError from "../../Pages/Shared/DisplayError/DisplayError";
+import About from "../../Pages/About/About";
+import ContactUs from "../../Pages/Home/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/contact-us',
+                element: <ContactUs></ContactUs>
             },
             {
                 path: '/login',
